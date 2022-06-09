@@ -5,7 +5,7 @@
 
 This is the Artifact README for Swiftest, an ultra-fast and ultra-light bandwidth testing service (BTS).
 
-### 1. Prerequisites
+### 0. Prerequisites
 
 If you want to obtain an in-depth and comprehensive understanding about the performance of Swiftest, we highly recommend that you meet the following requirements.
 
