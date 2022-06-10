@@ -11,17 +11,18 @@ If you want to obtain an in-depth and comprehensive understanding about the perf
 
 + **Devices.** You should possess an Android mobile device with different accesses including 4G(LTE), sub-6GHz 5G, and/or WiFi networks.
 
-+ **Geographic Location.** You are strongly recommended to be located in the mainland of China and under sub-6GHz 5G coverage. This is because both our test servers and users who opt in for evaluation were all located in the mainland of China. Currently we have not tested (and thus cannot guarantee) the performance of Swiftest (our proposed bandwidth testing services) outside the mainland of China or under mmWave 5G networks.
++ **Geographic Location.** You should be located in the mainland of China and under sub-6GHz 5G coverage. This is because both our test servers and users who opt in for evaluation were all located in the mainland of China. Currently we have not tested (and thus cannot guarantee) the performance of Swiftest (our proposed bandwidth testing services) outside the mainland of China or under mmWave 5G networks.
 
 For the users who do not meet the above requirements, we will endeavor to facilitate their understanding of Swiftest as well.
 In particular, we will provide them with a "standard device" placed in our lab located in Beijing, China, which they can remotely access (through Teamviewer) and further conduct online artifact evaluation upon. Currently, this standard device is not equipped with a SIM card so that only WiFi access is available. Nevertheless, we will soon make the 4G/5G access available for evaluation.
 
-+ **Skills.** If the user would like to build Swiftest on their own from the source code, it would be helpful for them to have some basic knowledge of Android development. For example, it would be very helpful if the evaluators have a familiarity with Android Studio. This is not a necessity as we will present the evaluators with a detailed tutorial for building and running Swiftest and BTS-APP.
++ **Skills.** If the user would like to build Swiftest on their own from the source code, it would be helpful for them to have some basic knowledge of Android development. For example, it would be very helpful if the evaluators have a familiarity with Android Studio. This is not a necessity as we will present the evaluators with a detailed tutorial on building and running Swiftest.
 
 
 ### 1. Getting Started with Swiftest
 
 #### 1.1 Hardware/Software Requirements
+
 
 #### 1.2 Running the Released Binary
 
@@ -30,7 +31,8 @@ In particular, we will provide them with a "standard device" placed in our lab l
 
 #### 2.1 Environment & Dependencies
 
-#### 2.2 Building Swiftest from Scratch
+#### 2.2* Building Swiftest from Scratch
+
 
 #### 2.3 Evaluation Methodology
 
