@@ -18,27 +18,30 @@ In particular, we will provide them with a "standard device" placed in our lab l
 
 + **Skills.** If the user would like to build Swiftest on their own from the source code, it would be helpful for them to have some basic knowledge of Android development. For example, it would be very helpful if the evaluators have a familiarity with Android Studio. This is not a necessity as we will present the evaluators with a detailed tutorial on building and running Swiftest.
 
-
 ### 1. Getting Started with Swiftest
 
 (1) Download the APK file from `Swiftest/installation_package/swiftest.apk` to your mobile device, and click to install Swiftest.
 
 (2) Grant the **precise location permission** to Swiftest. Note that this is only used for server selection process, and we will **NOT** record any of your personally identifiable information.
 
-(3) When you see the following interface, you are now ready for a bandwidth test!
+(3) When you see the GUI depicted in the left figure, you are now ready for a bandwidth test!
 
-![](https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/ready.jpeg)
+<figure class="half" align="center">
+    <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/ready.jpeg" width="200px">
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; 
+    
+    <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/finish.jpeg" width="200px">
+</figure>
 
-(4) After a short period of time (usually only one or two seconds), Swiftest will output your test result, test duration, data usage, and network type as well as shown in the Figure below.
+(4) After a short period of time (usually only one or two seconds), Swiftest will output your test result, test duration, data usage, and network type as well as shown in the right figure above.
 
-![](https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/finish.jpeg)
-
-### 2. Detailed Instructions 
+### 2.* Building Swiftest 
 
 #### 2.1 Environment & Dependencies
 
 #### 2.2* Building Swiftest from Scratch
 
+### 3. 
 
 #### 2.3 Evaluation Methodology
 
