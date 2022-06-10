@@ -28,29 +28,37 @@ In particular, we will provide them with a "standard device" placed in our lab l
 
 <figure class="half" align="center">
     <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/ready.jpeg" width="200px">
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; 
-    
-    <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/finish.jpeg" width="200px">
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/finish.jpeg" width="200px">
+
 </figure>
 
 (4) After a short period of time (usually only one or two seconds), Swiftest will output your test result, test duration, data usage, and network type as well as shown in the right figure above.
 
 ### 2.* Building Swiftest 
 
+This part of README are not important for the running of Swiftest and result reproducing, feel free to skip them if you do not wish to build Swiftest from scratch.
+
 #### 2.1 Environment & Dependencies
 
-#### 2.2* Building Swiftest from Scratch
+To build Swiftest, you need to have the following software environments and dependencies.
 
-### 3. 
++ Android Studio (version 2021.2.1 or newer, we recommend you to download the latest version from the [official website](https://developer.android.com/studio))
++ Android OS version 10.0 or latter (to support 5G technologies)
++ Android SDK Build-Tools' version newer than 21.0, our recommended version is 31.0
 
-#### 2.3 Evaluation Methodology
+#### 2.2 Building Swiftest
 
-#### 2.4 Result Reproducing
++ Open the project of Swifest client located at `xxx/xxx/xxx/xxx` with Android Studio, and wait for all the dependencies being installed. If you have changed the SDK enviroments according to Section 2.1, don't forget to sync the project (you can manually sync the project by clicking `file` $\rightarrow$ `sync the project with gradle files`).
++ Click `Build`$\rightarrow$`Build Bundle(s)/APK(s)`$\rightarrow$`Build APK(s)` to generate the installation package of Swiftest.
++ If you build the APK successfully, you would see a line of output `BUILD SUCCESSFUL in xxx s` in the terminal. Click the `locate` word to quickly find out the place of the generated APK file (see the figure below). 
 
+<figure class="half" align="center">
+    <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/build.jpeg" width="400px">
+
+​    
 
 ### 3. Artifact Claims
-
-* **Scope.** Detail what we provide for evaluation.
 
 * **Setup.** Detail how we implement and deploy Swiftest and BTS-APP for artifact evaluation.
 
@@ -59,7 +67,17 @@ In particular, we will provide them with a "standard device" placed in our lab l
 * **Stability.** Detail the drawbacks of current Swiftest.
 
 
-### 4. Code Organization
+### 4. Artifact Evaluation
+
+#### 4.1 Scope
+Detail what we provide for evaluation.
+
+#### 4.2 Evaluating Swiftest
+
+#### 4.3 Reproducing Data Plots
+
+
+### 5. Code Organization
 
 The codebase of Swiftest is organized as follows.
 
@@ -74,5 +92,4 @@ Swiftest
 + `Swiftest/client-side` is an Android Studio project that can be built as the client of Swiftest.
 + `Swiftest/server-side/test-server` currently includes a simplified version of test servers' transmission logic. We are still negotiating with BTS-APP's operational team to acquire the release permission of the entire transmission logic of test servers.
 + `Swiftest/server-side/master-server` contains the source code (in Go) and the executable binary of master-server.
-
 
