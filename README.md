@@ -28,8 +28,9 @@ In particular, we will provide them with a "standard device" placed in our lab l
 
 <figure class="half" align="center">
     <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/ready.jpeg" width="200px">
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
   <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/finish.jpeg" width="200px">
+
 
 </figure>
 
@@ -51,10 +52,11 @@ To build Swiftest, you need to have the following software environments and depe
 
 + Open the project of Swifest client located at `xxx/xxx/xxx/xxx` with Android Studio, and wait for all the dependencies being installed. If you have changed the SDK enviroments according to Section 2.1, don't forget to sync the project (you can manually sync the project by clicking `file` $\rightarrow$ `sync the project with gradle files`).
 + Click `Build`$\rightarrow$`Build Bundle(s)/APK(s)`$\rightarrow$`Build APK(s)` to generate the installation package of Swiftest.
-+ If you build the APK successfully, you would see a line of output `BUILD SUCCESSFUL in xxx s` in the terminal. Click the `locate` word to quickly find out the place of the generated APK file (see the figure below). 
++ If you build the APK successfully, you would see a line of output `''BUILD SUCCESSFUL in xxx s''` in the terminal. Click the `locate` button to quickly find out your generated APK file (see the figure below). 
 
 <figure class="half" align="center">
-    <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/build.jpeg" width="400px">
+    <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/build.jpeg" width="800px">
+
 
 ​    
 
