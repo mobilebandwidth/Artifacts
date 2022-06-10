@@ -26,13 +26,11 @@ In particular, we will provide them with a "standard device" placed in our lab l
 
 (3) When you see the GUI depicted in the left figure, you are now ready for a bandwidth test!
 
-<figure class="half" align="center">
+<div align="center">
     <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/ready.jpeg" width="200px">
-    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-  <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/finish.jpeg" width="200px">
-
-
-</figure>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/finish.jpeg" width="200px">
+</div>
 
 (4) After a short period of time (usually only one or two seconds), Swiftest will output your test result, test duration, data usage, and network type as well as shown in the right figure above.
 
@@ -54,9 +52,9 @@ To build Swiftest, you need to have the following software environments and depe
 + Click `Build`$\rightarrow$`Build Bundle(s)/APK(s)`$\rightarrow$`Build APK(s)` to generate the installation package of Swiftest.
 + If you build the APK successfully, you would see a line of output `''BUILD SUCCESSFUL in xxx s''` in the terminal. Click the `locate` button to quickly find out your generated APK file (see the figure below). 
 
-<figure class="half" align="center">
+<div align="center">
     <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/build.jpeg" width="800px">
-
+</div>
 
 ​    
 
