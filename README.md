@@ -1,4 +1,4 @@
-# Artifact 
+# Artifacts 
 ![license](https://img.shields.io/badge/Platform-Android-green "Android")
 ![license](https://img.shields.io/badge/Version-Beta-yellow "Version")
 ![license](https://img.shields.io/badge/Licence-Apache%202.0-blue.svg "Apache")
@@ -9,7 +9,7 @@ This is the Artifact README for Swiftest, an ultra-fast and ultra-light bandwidt
 
 If you want to obtain an in-depth and comprehensive understanding about the performance of Swiftest, we highly recommend that you meet the following requirements.
 
-+ **Devices.** You should possess an Android mobile device with different accesses including 4G(LTE), sub-6GHz 5G, and/or WiFi networks.
++ **Devices.** You should possess an Android mobile device with different accesses including 4G(LTE), sub-6GHz 5G, and/or WiFi networks. The Android OS version should be 10.0 or latter.
 
 + **Geographic Location.** You should be located in the mainland of China and under sub-6GHz 5G coverage. This is because both our test servers and users who opt in for evaluation were all located in the mainland of China. Currently we have not tested (and thus cannot guarantee) the performance of Swiftest (our proposed bandwidth testing services) outside the mainland of China or under mmWave 5G networks.
 
@@ -21,11 +21,17 @@ In particular, we will provide them with a "standard device" placed in our lab l
 
 ### 1. Getting Started with Swiftest
 
-#### 1.1 Hardware/Software Requirements
+(1) Download the APK file from `Swiftest/installation_package/swiftest.apk` to your mobile device, and click to install Swiftest.
 
+(2) Grant the **precise location permission** to Swiftest. Note that this is only used for server selection process, and we will **NOT** record any of your personally identifiable information.
 
-#### 1.2 Running the Released Binary
+(3) When you see the following interface, you are now ready for a bandwidth test!
 
+![](https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/ready.jpeg)
+
+(4) After a short period of time (usually only one or two seconds), Swiftest will output your test result, test duration, data usage, and network type as well as shown in the Figure below.
+
+![](https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/finish.jpeg)
 
 ### 2. Detailed Instructions 
 
