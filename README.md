@@ -60,9 +60,11 @@ To build Swiftest, you need to have the following software environments and depe
 
 ### 3. Artifact Claims
 
-* **Setup.** Detail how we implement and deploy Swiftest and BTS-APP for artifact evaluation.
+* **Setup.** The beta version of BTS-APP we used in our paper is no longer supported. Therefore, we re-implement the BTS-APP's basic testing logic (according to Section 2 of our paper) by ourselves and deploy BTS-APP together with Swiftest on the same test server pool for an apple-to-apple evaluation. Note that our current implementation of BTS-APP has been confirmed by BTS-APP's development team, while they do not want us to make our detailed implementations publicly available due to some business issues. Therefore, we only provide the installation package in `BTS-APP/xxx/xxx`. We encourage evaluators to use mainstream bandwidth testing apps like speedtest to perform general validation before the evaluation.
 
-* **Reproducibility.** Detail the potential factors that may affact the bandwidth testing results.
+  As for the server pool, currently we deploy `xxx` servers in China, each server has an 100-Mbps uplink bandwidth. Note that this server pool is a bit smaller than that used in our paper due to the monetary cost and small user scale (probably only used by the evaluators and us). Therefore, Swiftest can support up to xxx~Mbps bandwidth, which can cover almost all (99\%) the test cases based on our previous experience.
+
+* **Reproducibility.** It should be highlighted that the exact ground truth of a user's network bandwidth in the wild is hard to obtain, which is also pointed out by some prior work, e.g., [FastBTS](https://www.usenix.org/system/files/nsdi21-yang-xinlei.pdf). Even though Swiftest is equipped with advanced testing logics such as data-driven bandwidth probing (introduced in Section 5.1 of our paper), the results can still be inevitably factors such as traffic shaping mechisms in routers and ISPs,xxx,xxx. More importantly, under some circumstances () the ground-truth bandwidth could vary dramatically even within a short period of time (several seconds).
 
 * **Stability.** Detail the drawbacks of current Swiftest.
 
