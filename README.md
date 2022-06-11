@@ -79,15 +79,17 @@ The codebase of Swiftest is organized as follows.
 
 ```
 Swiftest
-|---- client-side
-|---- server-side
-          |---- test-server
-          |---- master-server
+    |----release
+    |----src
+          |---- client-side
+          |---- server-side
+              |---- test-server
+              |---- master-server
 ```
 
-+ `Swiftest/client-side` is an Android Studio project that can be built as the client of Swiftest.
++ `Swiftest/src/client-side` is an Android Studio project that can be built as the client of Swiftest， which is the critical component of Swiftest. Swiftest's main bandwidth testing logic is implemented in `Swiftest/src/client-side/app/src/main/java/com/example/swiftest/BandwidthTest.java`.
 + `Swiftest/server-side/test-server` currently includes a simplified version of test servers' transmission logic. We are still negotiating with BTS-APP's operational team to acquire the release permission of the entire transmission logic of test servers.
-+ `Swiftest/server-side/master-server` contains the source code (in Go) and the executable binary of master-server.
++ `Swiftest/server-side/master-server` contains the source code (in Go) and the executable binary of master-server, which is also a simplified implementation.
 
 ### 5.* Building Swiftest 
 
