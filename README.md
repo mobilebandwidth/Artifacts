@@ -115,7 +115,7 @@ To build Swiftest, you need to have the following software environments and depe
 
 
 
-### 5. References
+### 6. References
 
 ```
 @inproceedings {di2022trinity,
