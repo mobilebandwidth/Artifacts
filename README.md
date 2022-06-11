@@ -20,7 +20,7 @@ In particular, we will provide them with a "standard device" placed in our lab l
 
 ### 1. Getting Started with Swiftest
 
-(1) Download the APK file from `Swiftest/installation_package/swiftest.apk` to your mobile device, and click to install Swiftest.
+(1) Download the APK file from `Swiftest/release/swiftest.apk` to your mobile device, and click to install Swiftest.
 
 (2) Grant the **precise location permission** to Swiftest. Note that this is only used for server selection process, and we will **NOT** record any of your personally identifiable information.
 
@@ -54,7 +54,7 @@ We provide 1) our data and script to reproduce the figures in our paper, and 2) 
 
 #### 3.2 Evaluating Swiftest
 
-1. Install BTS-APP (using the installation package provided in  `xxx` )  and Swiftest (either the the installation package provided in  `xxx` or the one you build on your own) on your device.
+1. Install BTS-APP (using the installation package provided at  `BTS-APP/release/BTS-APP.apk`)  and Swiftest (either the the installation package provided at `Swiftest/release/swiftest.apk`) on your device.
 2. Open BTS-APP, click `START` button, wait until the test results is printed on the screen.
 3. Quit BTS-APP, wait 1-2 seconds (avoid mutual interference), open Swiftest, click `START` button, wait until the test result is output.
 4. Change the sequence of BTS-APP and Swiftest for another group of test. Note that  conduct sequential (back-to-back) bandwidth tests, with 1-2 second cooldown in between to avoid mutual interference.
