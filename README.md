@@ -60,13 +60,13 @@ To build Swiftest, you need to have the following software environments and depe
 
 ### 3. Artifact Claims
 
-* **Setup.** The beta version of BTS-APP used in our paper (released in Dec. 2021) is no longer supported. Therefore, we re-implement the BTS-APP's basic testing logic (according to Section 2 of our paper) by ourselves and deploy BTS-APP together with Swiftest on the same test server pool for an apple-to-apple comparison. Note that our current implementation of BTS-APP has been confirmed by BTS-APP's development team, while they do not want us to make our detailed implementations publicly available due to business issues. Therefore, we only provide the installation package in `BTS-APP/xxx/xxx`. We encourage evaluators to use mainstream bandwidth testing apps like speedtest to perform general validation before the evaluation.
+* **Setup.** The beta version of BTS-APP used in our paper (released in Dec. 2021) is no longer supported. Therefore, we re-implement the BTS-APP's basic testing logic (according to Section 2 of our paper) by ourselves and deploy BTS-APP together with Swiftest on the same test server pool for an apple-to-apple comparison. Note that our current implementation of BTS-APP has been confirmed by BTS-APP's development team, while they do not want us to make our detailed implementations publicly available due to business issues. Therefore, we only provide the installation package in `BTS-APP/xxx/xxx`. We encourage evaluators to use mainstream bandwidth testing apps like Speedtest to perform general validation before the evaluation.
 
   As for the server pool, currently we deploy `xxx` servers in China, each server has an 100-Mbps uplink bandwidth. Note that this server pool is a bit smaller than that used in our paper due to the monetary cost and small user scale (probably only used by the evaluators and us). Therefore, Swiftest can support up to xxx~Mbps bandwidth, which can cover almost all (99\%) the test cases based on our previous experience. In addition, test servers are not deployed outside the mainland of China because currently we do not have a business plan outside the mainland of China. Therefore, if you are the evaluator outside the mainland of China, we recommend you to access our standard device for evaluation.
 
 * **Reproducibility.** It should be highlighted that the exact ground truth of a user's network bandwidth in the wild is in fact hard to obtain, which also has been pointed out by some prior work, e.g., [FastBTS](https://www.usenix.org/system/files/nsdi21-yang-xinlei.pdf). Even though Swiftest is equipped with advanced testing logics such as data-driven bandwidth probing (introduced in Section 5.1 of our paper), the results can still be inevitably affected by factors like traffic shaping mechisms of routers and ISPs, load balancing and spectrum allocation strategies in base stations, and network resource contention across different end hosts. More importantly, under some circumstances (e.g., high mobility scenarios like high-speed rails and metro networks, and densely populated area like large shopping mall) the ground-truth bandwidth could vary dramatically even within a short period of time (several seconds). Therefore, it is common that the bandwidth test results can vary significantly among consecutive tests within just several minutes, even for Speedtest which deploys 16,000+ global test servers.
 
-  Given the above, we recommend users perform bandwidth tests under relatively stable network conditions (without VPNs, with a good signal strength and little cross-user network  contention). This is because only under these cases the test results are meaningful to users. Also, given the above, we recommend you to pay more attention to the test duration and  data usage during the evaluation phase, which are the key advantages of Swiftest compared with other BTSes.
+  Given the above, we recommend users to perform bandwidth tests under relatively stable network conditions (without VPNs, with a good signal strength and little cross-user network  contention). This is because only under these cases the test results are meaningful to users. Also, given the above, we recommend you to pay more attention to the test duration and  data usage during the evaluation phase, which are the key advantages of Swiftest compared with other BTSes.
 
 * **Stability.** Swiftest is currently under its beta version for further improvement and bug fixing, and thus cloud be unstable during the evaluation process. If you meet any problems when using Swiftest (such as app not responding), please quit the app, wait a couple of seconds, and then reopen the app for bandwidth testing. If this does not work, please feel free to contact us.
 
@@ -78,10 +78,16 @@ We provide 1) our data and script to reproduce the figures in our paper, and 2) 
 
 #### 4.2 Evaluating Swiftest
 
-+ **Methodology.**
-+ 
+1. Install BTS-APP (using the installation package provided in  `xxx` )  and Swiftest (either the the installation package provided in  `xxx` or the one you build on your own) on your device.
+2. Open BTS-APP, click `START` button, wait until the test results is printed on the screen.
+3. Quit BTS-APP, wait 1-2 seconds (avoid mutual interference), open Swiftest, click `START` button, wait until the test result is output.
+4. Change the sequence of BTS-APP and Swiftest for another group of test. Note that  conduct sequential (back-to-back) bandwidth tests, with 1-2 second cooldown in between to avoid mutual interference.
+5. Compare the test duration, data usage, and test results of BTS-APP and Swiftest to see the performance.
+6. You can also test your bandwidth using mainstream bandwidth testing apps like Speedtest to perform general comparison. There could be a certain range of error in terms of test results provided by Speedtest, BTS-APP, and Swiftest due to the differences in server pools and bandwidth testing logics. 
 
 #### 4.3 Reproducing Data Plots
+
+Our data plots are all generated from [Origin](https://www.originlab.com/), a proprietary computer program for interactive scientific graphing and data analysis. The detailed tutorial can be found [here](https://www.youtube.com/watch?v=oIqqwovfFfU). Basically, in each origin source file ( files ended with ` .opju`), both the figure and the corresponding data are contained as shown in the below figure.
 
 
 ### 5. Code Organization
