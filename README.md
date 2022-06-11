@@ -63,7 +63,7 @@ We provide 1) our data and script to reproduce the figures in our paper, and 2) 
 
 #### 3.3 Reproducing Data Plots
 
-All the scripts and data of the plots in our paper are placed [here](https://github.com/mobilebandwidth/Artifacts/tree/main/plots). All the data plots are generated from [Origin](https://www.originlab.com/), a proprietary computer program for interactive scientific graphing and data analysis. The detailed tutorial can be found [here](https://www.youtube.com/watch?v=oIqqwovfFfU). Basically, for each figure in the paper, we provide the plot file (in PDF form) and its corresponding origin source file (in OPJU form). In each source file, both the plot and the corresponding data are contained, as shown in the below figure.
+All the scripts and data of the plots in our paper are placed [here](https://github.com/mobilebandwidth/Artifacts/tree/main/plots). All the data plots are generated from [Origin](https://www.originlab.com/), a proprietary computer program for interactive scientific graphing and data analysis. The detailed tutorial can be found [here](https://www.youtube.com/watch?v=oIqqwovfFfU). Basically, for each figure in the paper, we provide the plot file (in PDF form) and its corresponding origin source file (in OPJU form). Open the source files with Origin, and you will see that each of them contains a plot and the corresponding data, as shown in the below figure.
 
 <div align="center">
     <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/origin.png" width="800px">
