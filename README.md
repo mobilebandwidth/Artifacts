@@ -8,16 +8,16 @@ This is the Artifact README for the paper #203 "Mobile Access Bandwidth in Pract
 
 ### 0. Prerequisites
 
-If you want to obtain an in-depth and comprehensive understanding about the performance of Swiftest, we highly recommend that you meet the following requirements.
+If you want to obtain an in-depth and comprehensive understanding of Swiftest's performance, we highly recommend that you meet the following requirements.
 
-+ **Devices.** You should possess an Android mobile device with different accesses including 4G(LTE), sub-6GHz 5G, and/or WiFi networks. The OS version should be Android 10.0 or latter.
++ **Devices.** You should possess an Android mobile device with different accesses, including 4G(LTE), sub-6GHz 5G, and/or WiFi networks. The OS version should be Android 10.0 or newer.
 
-+ **Geographic Location.** You should be located in the mainland of China and under sub-6GHz 5G coverage. This is because both our test servers and users who opt in for evaluation were all located in the mainland of China. Currently we have not tested (and thus cannot guarantee) the performance of Swiftest (our proposed bandwidth testing services) outside the mainland of China or under mmWave 5G networks.
++ **Geographic Location.** You should be located in the mainland of China and under sub-6GHz 5G coverage. This is because both our test servers and users who opt in for evaluation were all located in the mainland of China. Currently, we have not tested (and thus cannot guarantee) the performance of Swiftest (our proposed bandwidth testing services) outside the mainland of China or under mmWave 5G networks.
 
 For the users who do not meet the above requirements, we will endeavor to facilitate their understanding of Swiftest as well.
 In particular, we will provide them with a "standard device" placed in our lab located in Beijing, China, which they can remotely access (through Teamviewer) and further conduct online artifact evaluation upon. For more details, please refer to our [wiki](https://github.com/mobilebandwidth/Artifacts/wiki/Artifact-Evaluation-with-Standard-Device).
 
-+ **Skills.** If the user would like to build Swiftest on their own from the source code, it would be helpful for them to have some basic knowledge of Android development. For example, it would be very helpful if the evaluators have a familiarity with Android Studio. This is not a necessity as we will present the evaluators with a detailed tutorial on building and running Swiftest.
++ **Skills.** If the user would like to build Swiftest on their own from the source code, it would be helpful for them to have some basic knowledge of Android development. For example, it would be very helpful if the evaluators have a familiarity with Android Studio. This is not a necessity, since we will present the evaluators with a detailed tutorial on building and running Swiftest.
 
 ### 1. Getting Started with Swiftest
 
@@ -39,16 +39,16 @@ In particular, we will provide them with a "standard device" placed in our lab l
 
 * **Setup.** The beta version of BTS-APP used in our paper (released in Dec. 2021) is no longer supported. Therefore, we re-implement the BTS-APP's basic testing logic (according to Section 2 of our paper) by ourselves and deploy BTS-APP together with Swiftest on the same test server pool for an apple-to-apple comparison. Note that our current implementation of BTS-APP has been confirmed by BTS-APP's development team, while they do not want us to make our detailed implementations publicly available due to business issues. Therefore, we only provide the installation package in `BTS-APP/release/BTS-APP.apk`. We encourage evaluators to use mainstream bandwidth testing apps like Speedtest to perform general validation before the evaluation.
 
-  As for the server pool, currently we deploy `10` servers in China, each server has a 100-Mbps uplink bandwidth. Note that this server pool is a bit smaller than that used in our paper due to the monetary cost and small user scale (probably only used by the evaluators and us). Therefore, Swiftest can support up to 1,000~Mbps bandwidth, which can cover almost all (99\%) the test cases based on our previous experience. In addition, test servers are not deployed outside the mainland of China because currently we do not have a business plan outside the mainland of China. Therefore, if you are the evaluator outside the mainland of China, we recommend you to access our standard device for evaluation (detailed in our [wiki](https://github.com/mobilebandwidth/Artifacts/wiki/Artifact-Evaluation-with-Standard-Device)). In addition, due to the smaller server pool, the performance of Swiftest could be slightly affected.
+  As for the server pool, currently we deploy `10` servers in China. Each server has a 100-Mbps uplink bandwidth. Note that this server pool is a bit smaller than that used in our paper due to the monetary cost and small user scale (probably only used by the evaluators and us). Therefore, Swiftest can support up to 1,000~Mbps bandwidth, which can cover almost all (99\%) of the test cases based on our previous experience. In addition, test servers are not deployed outside the mainland of China because currently we do not have a business plan outside the mainland of China. Therefore, if you are the evaluator outside the mainland of China, we recommend you access our standard device for evaluation (detailed in our [wiki](https://github.com/mobilebandwidth/Artifacts/wiki/Artifact-Evaluation-with-Standard-Device)). In addition, due to the smaller server pool, the performance of Swiftest could be slightly affected.
 
 * **Reproducibility.** It should be highlighted that the exact ground truth of a user's network bandwidth in the wild is in fact hard to obtain, which also has been pointed out by some prior work, e.g., [FastBTS](https://www.usenix.org/system/files/nsdi21-yang-xinlei.pdf). 
 
-  Even though Swiftest is equipped with advanced testing logics such as data-driven bandwidth probing (introduced in Section 5.1 of our paper), the results can still be inevitably affected by factors like traffic shaping mechisms of routers and ISPs, load balancing and spectrum allocation strategies in base stations, and network resource contention across different end hosts (especially in WiFi networks).More importantly, under some circumstances (e.g., high mobility scenarios like high-speed rails and metro networks, and densely populated area like large shopping mall) the ground-truth bandwidth could vary dramatically even within a short period of time (several seconds). Therefore, it is common that the bandwidth test results can vary significantly among consecutive tests within just several minutes, even for Speedtest which deploys 16,000+ global test servers.
+  Even though Swiftest is equipped with advanced testing logic such as data-driven bandwidth probing (introduced in Section 5.1 of our paper), the results can still be inevitably affected by factors like traffic shaping mechanisms of routers and ISPs, load balancing and spectrum allocation strategies in base stations, and network resource contention across different end hosts (especially in WiFi networks). More importantly, under some circumstances (e.g., high mobility scenarios like high-speed rails and metro networks, and densely populated areas like large shopping malls) the ground-truth bandwidth could vary dramatically even within a short period of time (several seconds). Therefore, it is common that the bandwidth test results can vary significantly among consecutive tests within just several minutes, even for Speedtest that deploys 16,000+ global test servers.
 
   Given the above, we suggest that:
 
-  - the evaluators to perform bandwidth tests under relatively stable network conditions (without VPNs, with a good signal strength and little cross-user network  contention). In fact, in our previous evaluation (detailed in Section 5.3 in our paper), the users were also asked to conduct bandwidth tests under relatively good network conditions. This is because only under these cases the test results are meaningful to users. Otherwise, the test results cannot well represent the  dramatically varied bandwidth.
-  - pay more attention to **the test duration** and  **data usage** during the evaluation phase, which are the key advantages of Swiftest compared with other BTSes.
+  - the evaluators to perform bandwidth tests under relatively stable network conditions (without VPNs, with good signal strength and little cross-user network contention). In fact, in our previous evaluation (detailed in Section 5.3 in our paper), the users were also asked to conduct bandwidth tests under relatively good network conditions. This is because only under these cases the test results are meaningful to users. Otherwise, the test results cannot well represent the  dramatically varied bandwidth.
+  - pay more attention to the **test duration** and  **data usage** during the evaluation phase, which are the key advantages of Swiftest compared with other BTSes.
 
 * **Stability.** Swiftest is currently under its beta version for further improvement and bug fixing, and thus could be unstable during the evaluation process. 
 
@@ -67,11 +67,11 @@ We provide 1) our data and script to reproduce the figures in our paper, and 2) 
 #### 3.2 Evaluating Swiftest
 
 1. Install BTS-APP (using the installation package provided at  `BTS-APP/release/BTS-APP.apk`)  and Swiftest (either the the installation package provided at `Swiftest/release/swiftest.apk`) on your device.
-2. Open BTS-APP, click `START` button, wait until the test results is printed on the screen.
-3. Quit BTS-APP, wait 1-2 seconds (avoid mutual interference), open Swiftest, click `START` button, wait until the test result is output.
-4. Change the sequence of BTS-APP and Swiftest for another group of test. Note that  conduct sequential (back-to-back) bandwidth tests, with 1-2 second cooldown in between to avoid mutual interference.
+2. Open BTS-APP, click `START` button, and then wait until the test results is printed on the screen.
+3. Quit BTS-APP, wait 1-2 seconds (avoid mutual interference), open Swiftest, click `START` button, and wait until the test result is output.
+4. Change the sequence of BTS-APP and Swiftest for another group of tests. Note that  conduct sequential (back-to-back) bandwidth tests, with 1-2 second cooldown in between to avoid mutual interference.
 5. Compare the test duration, data usage, and test results of BTS-APP and Swiftest to see the performance.
-6. You can also test your bandwidth using mainstream bandwidth testing apps like Speedtest to perform general comparison. There could be a certain range of error in terms of test results provided by Speedtest, BTS-APP, and Swiftest due to the differences in server pools and bandwidth testing logics.
+6. You can also test your bandwidth using mainstream bandwidth testing apps like Speedtest to perform a general comparison. There could be a certain range of error in terms of test results provided by Speedtest, BTS-APP, and Swiftest due to the differences in server pools and bandwidth testing logic.
 
 For evaluators who would like to use our standard device for evaluation, please refer to our [wiki](https://github.com/mobilebandwidth/Artifacts/wiki/Artifact-Evaluation-with-Standard-Device) for more details.
 
