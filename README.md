@@ -1,4 +1,5 @@
-# Artifacts 
+Artifacts 
+
 ![license](https://img.shields.io/badge/Platform-Android-green "Android")
 ![license](https://img.shields.io/badge/Version-Beta-yellow "Version")
 ![license](https://img.shields.io/badge/Licence-Apache%202.0-blue.svg "Apache")
@@ -60,6 +61,8 @@ We provide 1) our data and script to reproduce the figures in our paper, and 2) 
 4. Change the sequence of BTS-APP and Swiftest for another group of test. Note that  conduct sequential (back-to-back) bandwidth tests, with 1-2 second cooldown in between to avoid mutual interference.
 5. Compare the test duration, data usage, and test results of BTS-APP and Swiftest to see the performance.
 6. You can also test your bandwidth using mainstream bandwidth testing apps like Speedtest to perform general comparison. There could be a certain range of error in terms of test results provided by Speedtest, BTS-APP, and Swiftest due to the differences in server pools and bandwidth testing logics.
+
+For evaluators who would like to use our standard device for evaluation, please refer to our [wiki](https://github.com/mobilebandwidth/Artifacts/wiki/Artifact-Evaluation-with-Standard-Device) for more details.
 
 #### 3.3 Reproducing Data Plots
 
@@ -126,4 +129,8 @@ To build Swiftest, you need to have the following software environments and depe
     publisher = {ACM}
   }
 ```
+
+
+
+
 

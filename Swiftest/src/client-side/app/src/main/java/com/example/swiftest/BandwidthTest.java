@@ -49,7 +49,7 @@ public class BandwidthTest {
     final static private int CheckerSleep = 50;                 // Time interval between checks
     final static private int CheckerWindowSize = 10;            // SimpleChecker window size
     final static private int CheckerSelectedSize = 8;           // SimplerChecker selected size
-    final static private double CheckerThreshold = 0.03;        // 3% threshold
+    final static private double CheckerThreshold = 0.08;        // Threshold
     final static private int CheckerTimeoutWindow = 50;         // Window size when overtime
 
 
