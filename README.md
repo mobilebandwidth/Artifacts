@@ -4,7 +4,7 @@
 ![license](https://img.shields.io/badge/Version-Beta-yellow "Version")
 ![license](https://img.shields.io/badge/Licence-Apache%202.0-blue.svg "Apache")
 
-This is the Artifact README for Swiftest, an ultra-fast and ultra-light bandwidth testing service (BTS). 
+This is the Artifact README for the paper #203 "Mobile Access Bandwidth in Practice: Measurement, Analysis, and Implications". In this paper, we present Swiftest, an ultra-fast and ultra-light bandwidth testing service (BTS). 
 
 ### 0. Prerequisites
 
