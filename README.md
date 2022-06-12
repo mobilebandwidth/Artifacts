@@ -10,7 +10,7 @@ This is the Artifact README for the paper #203 "Mobile Access Bandwidth in Pract
 
 If you want to obtain an in-depth and comprehensive understanding about the performance of Swiftest, we highly recommend that you meet the following requirements.
 
-+ **Devices.** You should possess an Android mobile device with different accesses including 4G(LTE), sub-6GHz 5G, and/or WiFi networks. The Android OS version should be 10.0 or latter.
++ **Devices.** You should possess an Android mobile device with different accesses including 4G(LTE), sub-6GHz 5G, and/or WiFi networks. The OS version should be Android 10.0 or latter.
 
 + **Geographic Location.** You should be located in the mainland of China and under sub-6GHz 5G coverage. This is because both our test servers and users who opt in for evaluation were all located in the mainland of China. Currently we have not tested (and thus cannot guarantee) the performance of Swiftest (our proposed bandwidth testing services) outside the mainland of China or under mmWave 5G networks.
 
@@ -25,7 +25,7 @@ In particular, we will provide them with a "standard device" placed in our lab l
 
 (2) Grant the **precise location permission** to Swiftest. Note that this is only used for server selection process, and we will **NOT** record any of your personally identifiable information.
 
-(3) When you see the GUI depicted in the left figure, you are now ready for a bandwidth test!
+(3) When you see the GUI in the left figure, you are now ready for a bandwidth test!
 
 <div align="center">
     <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/ready.jpeg" width="200px">
@@ -33,7 +33,7 @@ In particular, we will provide them with a "standard device" placed in our lab l
     <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/finish.jpeg" width="200px">
 </div>
 
-(4) After a short period of time (usually only one or two seconds), Swiftest will output your test result, test duration, data usage, and network type as well as shown in the right figure above.
+(4) Click the `START` button, after a short period of time (usually only one or two seconds), Swiftest will output your test result, test duration, data usage, and network type as well as shown in the right figure above.
 
 ### 2. Artifact Claims
 
