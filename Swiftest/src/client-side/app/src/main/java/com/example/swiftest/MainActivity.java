@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         TextView bandwidth_text = findViewById(R.id.bandwidth);
         TextView duration_text = findViewById(R.id.duration);
         TextView traffic_text = findViewById(R.id.traffic);
-        TextView network_text = findViewById(R.id.network);
+        // TextView network_text = findViewById(R.id.network);
         Button button = findViewById(R.id.start);
         button.setOnClickListener(view -> {
             if (isTesting) {
@@ -43,18 +43,18 @@ public class MainActivity extends AppCompatActivity {
                 bandwidth_text.setText(R.string.testing);
                 duration_text.setText(R.string.testing);
                 traffic_text.setText(R.string.testing);
-                network_text.setText(R.string.testing);
+                // network_text.setText(R.string.testing);
                 new Thread(() -> {
                     String bandwidth = "0";
                     String duration = "0";
                     String traffic = "0";
-                    String network = "";
+                    // String network = "";
                     try {
                         bandwidthTest.SpeedTest();
                         bandwidth = bandwidthTest.bandwidth_Mbps;
                         duration = bandwidthTest.duration_s;
                         traffic = bandwidthTest.traffic_MB;
-                        network = bandwidthTest.networkType;
+                        // network = bandwidthTest.networkType;
                         bandwidthTest.stop();
                     } catch (InterruptedException e) {
                         e.printStackTrace();
@@ -62,14 +62,14 @@ public class MainActivity extends AppCompatActivity {
                     String finalBandwidth = bandwidth + "  Mbps";
                     String finalDuration = duration + "  s";
                     String finalTraffic = traffic + "  MB";
-                    String finalNetwork = network;
+                    // String finalNetwork = network;
                     runOnUiThread(() -> {
                         isTesting = false;
                         button.setText(R.string.start);
                         bandwidth_text.setText(finalBandwidth);
                         duration_text.setText(finalDuration);
                         traffic_text.setText(finalTraffic);
-                        network_text.setText(finalNetwork);
+                        // network_text.setText(finalNetwork);
                     });
                 }).start();
             }
