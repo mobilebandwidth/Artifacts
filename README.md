@@ -71,7 +71,7 @@ We provide 1) our data and script to reproduce the figures in our paper, and 2) 
 3. Quit BTS-APP, wait 1-2 seconds (avoid mutual interference), open Swiftest, click `START` button, and wait until the test result is output.
 4. Change the sequence of BTS-APP and Swiftest for another group of tests. Note that  conduct sequential (back-to-back) bandwidth tests, with 1-2 second cooldown in between to avoid mutual interference.
 5. Compare the test duration, data usage, and test results of BTS-APP and Swiftest to see the performance.
-6. You can also test your bandwidth using mainstream bandwidth testing apps like Speedtest to perform a general comparison. There could be a certain range of error in terms of test results provided by Speedtest, BTS-APP, and Swiftest due to the differences in server pools and bandwidth testing logic.
+6. You can also test your bandwidth using mainstream bandwidth testing apps like Speedtest to perform a general comparison. There could be a certain range of error in terms of test results provided by Speedtest, BTS-APP, and Swiftest due to the differences in server pools and bandwidth testing logic. **Note that the results of Speedtest should not be considered when formally evaluating the performance of Swiftest (only BTS-APP and Swiftest are compared in detail in Section 5.3).**
 
 For evaluators who would like to use our standard device for evaluation, please refer to our [wiki](https://github.com/mobilebandwidth/Artifacts/wiki/Artifact-Evaluation-with-Standard-Device) for more details.
 
