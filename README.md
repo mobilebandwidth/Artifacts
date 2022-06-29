@@ -84,7 +84,7 @@ All the scripts and data of the plots in our paper are placed [here](https://git
 **Tips.** As the Origin is a proprietary software, the evaluators can download a free trial (which can be used for two weeks for free) for evaluation (click [here](https://www.originlab.com/demodownload.aspx)). Alternatively, the evaluators can remotely access our standard device and review the data plot online. All the data plots are placed in the `plots` folder on the desktop, where you can easily double click each OPJU file to see the source of each figure. Please refer to our [wiki](https://github.com/mobilebandwidth/Artifacts/wiki/Artifact-Evaluation-with-Standard-Device) for more access details. Finally, we also provide the raw data in EXCEL form corresponding to each figure for the evaluators' fast check.  
 
 <div align="center">
-    <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/origin.png" width="800px">
+    <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/origin.jpeg" width="800px">
 </div>
 
 
