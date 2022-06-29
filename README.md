@@ -81,7 +81,7 @@ For evaluators who would like to use our standard device for evaluation, please 
 
 All the data plots are generated from [Origin](https://www.originlab.com/), a **Windows-based** **proprietary** computer program for interactive scientific graphing and data analysis. We recommend you to download installation package of Origin from our cloud disk (click [here](https://cloud.tsinghua.edu.cn/d/66f63723feae4adc91d6/)). You can also download it from the [offical websites](https://www.originlab.com/demodownload.aspx), but additional registration efforts are needed. Then you can install Origin on your own computer. Once the Origin is successfully installed, you will have a **3-day free trial for evaluation**. You can find the detailed installation instructions in our [wiki](https://github.com/mobilebandwidth/Artifacts/wiki/Installing-Origin-on-Windows).
 
-**Tips. ** If you do not have a Windows device or just would not like to bother to install Origin on your own device, we also recommend you to **remotely access our standard device (where Origin has been installed) and review the data plot online**. Please refer to our [wiki](https://github.com/mobilebandwidth/Artifacts/wiki/Artifact-Evaluation-with-Standard-Device) for more access details. All the data plots are placed in the `plots` folder on the desktop.
+**Tips.** If you do not have a Windows device or just would not like to bother to install Origin on your own device, we also recommend you to **remotely access our standard device (where Origin has been installed) and review the data plot online**. Please refer to our [wiki](https://github.com/mobilebandwidth/Artifacts/wiki/Artifact-Evaluation-with-Standard-Device) for more access details. All the data plots are placed in the `plots` folder on the desktop.
 
 Once you have successfully installed Origin (or have logged in our standard device), you can move on to reproduce our data plots! All the scripts and data of the plots in our paper are placed [here](https://github.com/mobilebandwidth/Artifacts/tree/main/plots) (the same as those in the `plots` folder on our standard device). Basically, for each figure in the paper, we provide the plot file (in PDF form), its corresponding origin source file (in OPJU form) and raw data (in EXCEL form for evaluators' fast check). **Double click the OPJU files** with Origin, and you will see the interface as shown in the below figure. For each OPJU file, all you need to do is the following three steps:
 
@@ -92,7 +92,7 @@ Once you have successfully installed Origin (or have logged in our standard devi
 <div align="center">
     <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/origin.jpeg" width="800px">
 </div>
-If you have any difficulty using Origin, please do not hesitate to contact us and yangxinlei19971105@gmail.com or [linhao-16@outlook.com](mailto:linhao-16@outlook.com) . We will try our best to help you reproduce our figures through Origin.
+If you have any difficulty using Origin, please do not hesitate to contact us and ***yangxinlei19971105@gmail.com*** or ***linhao-16@outlook.com***. We will try our best to help you reproduce our figures through Origin.
 
 
 
