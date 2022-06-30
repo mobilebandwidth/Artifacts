@@ -92,7 +92,9 @@ Once you have successfully installed Origin (or have logged in our standard devi
 <div align="center">
     <img src="https://raw.githubusercontent.com/mobilebandwidth/Artifacts/main/.github/images/origin.jpeg" width="800px">
 </div>
-If you have any difficulty using Origin, please do not hesitate to contact us and ***yangxinlei19971105@gmail.com*** or ***linhao-16@outlook.com***. We will try our best to help you reproduce our figures through Origin.
+
+
+If you have any difficulty using Origin, please do not hesitate to contact us at [yangxinlei19971105@gmail.com](mailto:yangxinlei19971105@gmail.com) or [linhao-16@outlook.com](mailto:linhao-16@outlook.com). We will try our best to help you reproduce our figures through Origin.
 
 
 
