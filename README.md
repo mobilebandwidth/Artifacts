@@ -14,9 +14,6 @@ If you want to obtain an in-depth and comprehensive understanding of Swiftest's 
 
 + **Geographic Location.** You should be located in the mainland of China and under sub-6GHz 5G coverage. This is because both our test servers and users who opt in for evaluation were all located in the mainland of China. Currently, we have not tested (and thus cannot guarantee) the performance of Swiftest (our proposed bandwidth testing services) outside the mainland of China or under mmWave 5G networks.
 
-For the users who do not meet the above requirements, we will endeavor to facilitate their understanding of Swiftest as well.
-In particular, we will provide them with a "standard device" placed in our lab located in Beijing, China, which they can remotely access (through Teamviewer) and further conduct online artifact evaluation upon. For more details, please refer to our [wiki](https://github.com/mobilebandwidth/Artifacts/wiki/Artifact-Evaluation-with-Standard-Device).
-
 + **Skills.** If the user would like to build Swiftest on their own from the source code, it would be helpful for them to have some basic knowledge of Android development. For example, it would be very helpful if the evaluators have a familiarity with Android Studio. This is not a necessity, since we will present the evaluators with a detailed tutorial on building and running Swiftest.
 
 ### 1. Getting Started with Swiftest
@@ -42,8 +39,6 @@ In particular, we will provide them with a "standard device" placed in our lab l
     Our current implementation of BTS-APP has been confirmed by BTS-APP's development team. However, due to commercial restriction, we only provide the installation package in `BTS-APP/release/BTS-APP.apk`. We encourage evaluators to use mainstream bandwidth testing apps like Speedtest to perform general validation as well before the evaluation.
 
 * **Server Deployment.** As for the server pool, currently we deploy `10` servers in China. Each server has a 100-Mbps uplink bandwidth. Therefore, Swiftest can support up to 1,000~Mbps bandwidth. In addition, test servers are not deployed outside the mainland of China. 
-
-    Therefore, ***if you are the evaluator outside the mainland of China, we recommend you access our standard device for evaluation (detailed in our [wiki](https://github.com/mobilebandwidth/Artifacts/wiki/Artifact-Evaluation-with-Standard-Device)).***
 
 * **Reproducibility.** It should be noted that the exact ground truth of a user's network bandwidth in the wild is in fact hard to obtain, which also has been pointed out by some prior work, e.g., [FastBTS](https://www.usenix.org/system/files/nsdi21-yang-xinlei.pdf). Also, under some circumstances (e.g., high-speed rails) the ground-truth bandwidth could vary dramatically even within a short period of time (several seconds). Therefore, it is common that the bandwidth test results can vary among consecutive tests within just several minutes, even for Speedtest.
 
@@ -75,15 +70,11 @@ We provide 1) our data and script to reproduce the figures in our paper, and 2) 
 5. Compare the test duration, data usage, and test results of BTS-APP and Swiftest to see the performance.
 6. You can also test your bandwidth using mainstream bandwidth testing apps like Speedtest to perform a general comparison. There could be a certain range of error in terms of test results provided by Speedtest, BTS-APP, and Swiftest due to the differences in server pools and bandwidth testing logic. **Note that the results of Speedtest should not be considered when formally evaluating the performance of Swiftest (only BTS-APP and Swiftest are compared in detail in Section 5.3).**
 
-For evaluators who would like to use our standard device for evaluation, please refer to our [wiki](https://github.com/mobilebandwidth/Artifacts/wiki/Artifact-Evaluation-with-Standard-Device) for more details.
-
 #### 3.3 Reproducing Data Plots
 
 All the data plots are generated from [Origin](https://www.originlab.com/), a **Windows-based** **proprietary** computer program for interactive scientific graphing and data analysis. We recommend you to download installation package of Origin from our cloud disk (click [here](https://drive.google.com/file/d/1-kM04RlJmXzZhDmWq_ZFieEkKR-Zqq3n/view?usp=sharing)). You can also download it from the [offical websites](https://www.originlab.com/demodownload.aspx), but additional registration efforts are needed. Then you can install Origin on your own computer. You can find the detailed installation instructions in our [wiki](https://github.com/mobilebandwidth/Artifacts/wiki/Installing-Origin-on-Windows). Once the Origin is successfully installed, you will have a **3-day free trial for evaluation**.
 
-**Tips.** If you do not have a Windows device or just would not like to bother to install Origin on your own device, we also recommend you to **remotely access our standard device (where Origin has been installed) and review the data plot online**. Please refer to our [wiki](https://github.com/mobilebandwidth/Artifacts/wiki/Artifact-Evaluation-with-Standard-Device) for more access details. All the data plots are placed in the `plots` folder on the desktop.
-
-Once you have successfully installed Origin (or have logged in our standard device), you can move on to reproduce our data plots! All the scripts and data of the plots in our paper are placed [here](https://github.com/mobilebandwidth/Artifacts/tree/main/plots) (the same as those in the `plots` folder on our standard device). Basically, for each figure in the paper, we provide the plot file (in PDF form), its corresponding origin source file (in OPJU form) and raw data (in EXCEL form for evaluators' fast check). **Double click the OPJU files** with Origin, and you will see the interface as shown in the below figure. For each OPJU file, all you need to do is the following three steps:
+Once you have successfully installed Origin, you can move on to reproduce our data plots! All the scripts and data of the plots in our paper are placed [here](https://github.com/mobilebandwidth/Artifacts/tree/main/plots). Basically, for each figure in the paper, we provide the plot file (in PDF form), its corresponding origin source file (in OPJU form) and raw data (in EXCEL form for evaluators' fast check). **Double click the OPJU files** with Origin, and you will see the interface as shown in the below figure. For each OPJU file, all you need to do is the following three steps:
 
 1. Click the `Project Explorer`;
 2. Click the `Book` to see the source data of the figure;
